@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateApptController">
+   <children>
+      <Button layoutX="14.0" layoutY="413.0" mnemonicParsing="false" onAction="#onActionClose" prefHeight="30.0" prefWidth="136.0" text="Back to Calendar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="createApptIDTxt" disable="true" layoutX="299.0" layoutY="46.0" />
+      <Label layoutX="245.0" layoutY="50.0" text="ID" />
+      <TextField fx:id="createApptTitleTxt" layoutX="299.0" layoutY="80.0" />
+      <TextField fx:id="createApptDescTxt" layoutX="299.0" layoutY="121.0" />
+      <TextField fx:id="createApptLocTxt" layoutX="299.0" layoutY="160.0" />
+      <ComboBox fx:id="createApptContCmb" layoutX="188.0" layoutY="248.0" prefWidth="150.0" />
+      <DatePicker fx:id="createApptDatePick" layoutX="176.0" layoutY="346.0" />
+      <Label layoutX="240.0" layoutY="84.0" text="Title" />
+      <Label layoutX="221.0" layoutY="125.0" text="Description" />
+      <Label layoutX="222.0" layoutY="164.0" text="Location" />
+      <Label layoutX="136.0" layoutY="252.0" text="Contact" />
+      <Label layoutX="176.0" layoutY="325.0" text="Date" />
+      <Label layoutX="471.0" layoutY="293.0" text="Start Time" />
+      <Label layoutX="473.0" layoutY="350.0" text="End Time" />
+      <Button layoutX="339.0" layoutY="380.0" mnemonicParsing="false" onAction="#onActionCreate" text="Create">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <ComboBox fx:id="createApptStartHour" layoutX="471.0" layoutY="313.0" prefHeight="25.0" prefWidth="86.0" promptText="Hour" />
+      <ComboBox fx:id="createApptStartMin" layoutX="582.0" layoutY="313.0" prefHeight="25.0" prefWidth="86.0" promptText="Minute" />
+      <Label layoutX="567.0" layoutY="309.0" text=":">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="createApptEndHour" layoutX="471.0" layoutY="369.0" prefHeight="25.0" prefWidth="86.0" promptText="Hour" />
+      <ComboBox fx:id="createApptEndMin" layoutX="582.0" layoutY="369.0" prefHeight="25.0" prefWidth="86.0" promptText="Minute" />
+      <Label layoutX="567.0" layoutY="366.0" text=":">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="createApptCustCmb" layoutX="471.0" layoutY="248.0" prefWidth="150.0" />
+      <Label layoutX="413.0" layoutY="252.0" text="Customer" />
+      <Label layoutX="238.0" layoutY="206.0" text="Type" />
+      <TextField fx:id="createApptTypeTxt" layoutX="299.0" layoutY="202.0" />
+      <ComboBox fx:id="createApptUserCmb" layoutX="188.0" layoutY="289.0" prefWidth="150.0" />
+      <Label layoutX="138.0" layoutY="293.0" text="User" />
+   </children>
+</AnchorPane>

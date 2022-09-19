@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.custMenuController">
+   <children>
+      <Button fx:id="custBackBtn" layoutX="1093.0" layoutY="660.0" mnemonicParsing="false" onAction="#onActionBack" prefHeight="30.0" prefWidth="136.0" text="Back to Calendar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="custTable" layoutX="534.0" layoutY="157.0" prefHeight="396.0" prefWidth="560.0">
+        <columns>
+          <TableColumn fx:id="custIDCol" prefWidth="92.0" text="ID" />
+          <TableColumn fx:id="custNameCol" prefWidth="467.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="custDivCmb" disable="true" layoutX="230.0" layoutY="466.0" prefWidth="150.0" promptText="Division" />
+      <TextField fx:id="custNameTxt" disable="true" layoutX="224.0" layoutY="180.0" promptText="Customer Full Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="custAddressTxt" disable="true" layoutX="224.0" layoutY="228.0" promptText="Customer Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="custPostalTxt" disable="true" layoutX="224.0" layoutY="282.0" promptText="Customer Postal Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="custPhoneTxt" disable="true" layoutX="224.0" layoutY="334.0" promptText="Customer Phone">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="custCountryCmb" disable="true" layoutX="230.0" layoutY="403.0" onAction="#onActionCountrySelected" prefWidth="150.0" promptText="Country" />
+      <TextField fx:id="custIDTxt" disable="true" layoutX="75.0" layoutY="145.0" prefHeight="25.0" prefWidth="96.0" promptText="ID" />
+      <Button fx:id="custCreateBtn" layoutX="150.0" layoutY="553.0" mnemonicParsing="false" onAction="#onActionCreateCust" text="Create" />
+      <Button fx:id="custUpdateBtn" layoutX="253.0" layoutY="553.0" mnemonicParsing="false" onAction="#onActionUpdateCust" text="Update" />
+      <Button fx:id="custDeleteBtn" layoutX="354.0" layoutY="553.0" mnemonicParsing="false" onAction="#onActionDeleteCust" text="DELETE" />
+      <Label layoutX="123.0" layoutY="187.0" text="Name:" />
+      <Label layoutX="123.0" layoutY="235.0" text="Address:" />
+      <Label layoutX="123.0" layoutY="289.0" text="Postal Code:" />
+      <Label layoutX="123.0" layoutY="341.0" text="Phone Number:" />
+      <Button fx:id="newCustBtn" layoutX="72.0" layoutY="102.0" mnemonicParsing="false" onAction="#onActionCreateNew" text="Create a new customer" />
+      <Label fx:id="createSuccessLbl" layoutX="150.0" layoutY="552.0" text="Customer created successfully" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportsMenuController">
+   <children>
+      <Button layoutX="689.0" layoutY="386.0" mnemonicParsing="false" onAction="#onActionExit" prefHeight="30.0" prefWidth="167.0" text="Back to Calendar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="367.0" layoutY="83.0" mnemonicParsing="false" onAction="#onActionTotalAppts" prefHeight="57.0" prefWidth="179.0" text="Total Appointments">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="367.0" layoutY="177.0" mnemonicParsing="false" onAction="#onActionContSchedules" prefHeight="57.0" prefWidth="179.0" text="Contact Schedules">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="367.0" layoutY="273.0" mnemonicParsing="false" onAction="#onActionThirdReport" prefHeight="57.0" prefWidth="179.0" text="Count Past Appointments">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

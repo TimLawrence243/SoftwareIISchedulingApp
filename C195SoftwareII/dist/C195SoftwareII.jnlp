@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="C195SoftwareII.jnlp">
+  <information>
+    <title>C195SoftwareII</title>
+    <vendor>tim83</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="C195SoftwareII.jar" size="51515" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.25.jar" size="2428320" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="c195softwareii.C195SoftwareII"  name="C195SoftwareII" />
+  <update check="always"/>
+</jnlp>
